@@ -22,7 +22,7 @@ type IterableMap map[interface{}]interface{}
 
 type MapIterator func(interface{}, interface{}, int)
 
-func (m IterableMap) iterateOver(f MapIterator, order IterateOrder) {
+func (m IterableMap) IterateOver(f MapIterator, order IterateOrder) {
 	var intKeys []int
 	var strKeys []string
 	for k := range m {
